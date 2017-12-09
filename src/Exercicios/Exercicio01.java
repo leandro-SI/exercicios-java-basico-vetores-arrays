@@ -5,6 +5,8 @@
  */
 package Exercicios;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Leandro
@@ -13,19 +15,19 @@ public class Exercicio01 {
     
     public static void main(String[] args) {
         
+        Scanner scan = new Scanner(System.in);
         int[] vetA = new int[5];
         int[] vetB = new int[5];
         
-        vetA[0] = 1;
-        vetA[1] = 2;
-        vetA[2] = 3;
-        vetA[3] = 4;
-        vetA[4] = 5;
+        for(int i = 0; i < vetA.length; i++){
+            System.out.println("Digite o valor da posição: " + i);
+            vetA[i] = scan.nextInt();
+        }
         
         for(int i = 0; i < vetA.length; i++){
             vetB[i] = vetA[i];
         }
-        
+          
         
     }
 }
